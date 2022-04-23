@@ -172,7 +172,7 @@ textarea {
 }
 /* !JAVASCRIPT STYLES */
 .active.menu {
-  /* z-index: initial; */
+  z-index: initial;
   pointer-events: initial;
   transform: scale(1) translateY(4.5rem);
 }
@@ -181,7 +181,22 @@ textarea {
   opacity: 1;
   transition: opacity 0.1s 0.5s;
 }
+/* Convert the hamburger to the X icon  */
+.active .open-icon {
+  display: none;
+}
 
+.active .close-icon {
+  display: block;
+}
+
+.dark-theme .theme-off {
+  display: none;
+}
+
+.dark-theme .theme-on {
+  display: block;
+}
 /* !HERO STYLES*/
 
 /* !ABOUT ME STYLES */
