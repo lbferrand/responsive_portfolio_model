@@ -15,6 +15,7 @@
   --link-hover-color: rgba(255, 255, 255, 0.2);
   --title-font-family: "Playfair Display", "serif";
   --body-font-family: "Poppins", "sans-serif";
+  --container-width: 96rem;
   --container-padding: 1.5rem;
   --section-vertical-spacing: 8rem;
 }
@@ -76,9 +77,75 @@ textarea {
 ?background: radial-gradient(50% 50% at 50% 50%, rgba(255, 101, 118, .08) 0%, rgba(255, 101, 118, 0) 100%); 
 */
 /* !REUSABLE CLASSES */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
 
 /* !HEADER */
+.header {
+  margin-bottom: 5rem;
+}
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  position: relative;
+}
+
+.logo {
+  font-family: var(--title-font-family);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.navbar-buttons {
+  display: flex;
+  column-gap: 0.5rem;
+  padding: 0 0.5rem;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border-radius: 0.4rem;
+  position: relative;
+  z-index: 999;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.icon-button {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+}
+
+.icon-button i {
+  margin: auto;
+}
+
+.close-icon,
+.theme-on {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  right: 1.55rem;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.4rem;
+  z-index: -1;
+}
+
+.list {
+  display: flex;
+  gap: 2.5rem;
+}
 /* !JAVASCRIPT STYLES */
 
 /* !HERO STYLES*/
