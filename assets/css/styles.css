@@ -140,11 +140,34 @@ textarea {
   padding: 0.8rem 1.5rem;
   border-radius: 0.4rem;
   z-index: -1;
+  pointer-events: none;
+  transform: scale(0);
+  transition: transform 0.25s 0.25s cubic-bezier(1, 0, 0, 1);
 }
 
 .list {
   display: flex;
   gap: 2.5rem;
+}
+
+.menu > .list {
+  opacity: 0;
+}
+.menu > .list .list-link {
+  text-transform: uppercase;
+}
+
+.list-link {
+  font-size: 1.4rem;
+}
+
+.list-link:hover,
+.list-link:focus {
+  opacity: 0.7;
+}
+
+.list-link span {
+  font-weight: bold;
 }
 /* !JAVASCRIPT STYLES */
 
