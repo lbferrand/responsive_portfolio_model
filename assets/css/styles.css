@@ -139,7 +139,7 @@ textarea {
   color: var(--light-color);
   padding: 0.8rem 1.5rem;
   border-radius: 0.4rem;
-  z-index: -1;
+  /* z-index: -1; */
   pointer-events: none;
   transform: scale(0);
   transition: transform 0.25s 0.25s cubic-bezier(1, 0, 0, 1);
@@ -170,6 +170,16 @@ textarea {
   font-weight: bold;
 }
 /* !JAVASCRIPT STYLES */
+.active.menu {
+  /* z-index: initial; */
+  pointer-events: initial;
+  transform: scale(1) translate(4.5rem);
+}
+
+.active.menu > .list {
+  opacity: 1;
+  transition: opacity 0.1s 0.5s;
+}
 
 /* !HERO STYLES*/
 
