@@ -31,7 +31,7 @@ body {
   line-height: 1.5;
   background-color: var(--light-color);
   color: var(--dark-color);
-  overflow: hidden;
+  overflow: auto;
 }
 
 body.dark-theme {
@@ -99,6 +99,22 @@ textarea {
   background: url("../images/sparkle.png") center no-repeat;
   background-size: cover;
 }
+
+.d-grid {
+  display: grid;
+}
+
+.section:not(.hero)::before {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 101,,118,.08) 0%, rgba(255, 101, 118, 0) 100%);
+  z-index: -1;
+}
+
 
 /* !HEADER */
 .header {
@@ -274,7 +290,28 @@ textarea {
   background: url("../images/sparkle_alt_light.png") center no-repeat;
   background-size: cover;
 }
+
 /* !ABOUT ME STYLES */
+.section-description {
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.description {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.description-image {
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto;
+  transform: rotate(25deg);
+}
 
 /* !PORTFOLIO STYLES */
 
