@@ -47,6 +47,7 @@ a {
 }
 
 img {
+  border-radius: 180px;
   max-width: 100%;
   display: block;
 }
