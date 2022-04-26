@@ -313,6 +313,58 @@ textarea {
   transform: rotate(25deg);
 }
 
+.description-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.description-image.has-sparkles::before,
+.description-image.has-sparkles::after {
+  width: 2rem;
+  height: 2rem;
+}
+
+.description-image.has-sparkles::before {
+  top: 2rem;
+  right: 1rem;
+}
+.description-image.has-sparkles::after {
+  top: 10rem;
+  right: -1rem;
+}
+
+.tech-stack {
+  max-width: 50rem;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 2.5rem;
+}
+
+.tech-stack-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.tech-stack-item i {
+  font-size: 5rem;
+  opacity: .5;
+}
+
+.dark-theme .theme-stack-item {
+  opacity: .8;
+}
+
+.tech-stack-item::before,
+.tech-stack-item::after {
+  position: absolute;
+  top: -1rem;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform .5s, opacity .5s;
+}
+
 /* !PORTFOLIO STYLES */
 
 /* !CONTACT STYLES */
