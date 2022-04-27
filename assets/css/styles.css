@@ -399,6 +399,31 @@ textarea {
   transform: translateY(calc(-100% + -0.5rem));
 }
 /* !PORTFOLIO STYLES */
+.section-title-container {
+  display: inline-block;
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  font-size: clamp(4rem, 10vw, 8rem);
+}
+
+.section-subtitle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1.5rem;
+}
+
+.subtitle-number {
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid var(--dark-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* !CONTACT STYLES */
 
