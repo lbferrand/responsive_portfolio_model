@@ -47,7 +47,6 @@ a {
 }
 
 img {
-  border-radius: 180px;
   max-width: 100%;
   display: block;
 }
@@ -72,6 +71,10 @@ textarea {
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+.luciana {
+  border-radius: 180px;
 }
 /* 
 ?RADIAL GRADIENT
