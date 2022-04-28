@@ -507,7 +507,13 @@ textarea {
 .button-fill {
   position: relative;
   outline: 2px solid var(--dark-color);
+  overflow: hidden;
   transition: color 0.25s;
+}
+
+.button-fill:hover,
+.button-fill:focus {
+  color: var(--light-color);
 }
 
 .button-fill::before {
@@ -520,6 +526,7 @@ textarea {
   left: 0;
   z-index: -1;
   transform: scale(0);
+  transform-origin: bottom left;
   transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .large-button.button-fill::before {
