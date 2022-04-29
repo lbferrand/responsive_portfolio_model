@@ -205,7 +205,9 @@ textarea {
 }
 
 .list-link:hover,
-.list-link:focus {
+.list-link:focus,
+.scroll-top:hover,
+.scroll-top:focus {
   opacity: 0.7;
 }
 
@@ -583,7 +585,26 @@ textarea {
 }
 
 /* !FOOTER STYLES */
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border-top: 1px solid var(--border-top-color);
+  padding-top: 5rem;
+  padding-bottom: 1.5rem;
+}
 
+.footer .list-link {
+  color: var(--dark-color);
+}
+
+.scroll-top {
+  display: flex;
+  align-items: center;
+  color: var(--dark-color);
+}
 /* !SCROLLBAR */
 
 /* !MEDIA QUERIES */
