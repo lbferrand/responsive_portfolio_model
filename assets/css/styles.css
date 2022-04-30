@@ -15,7 +15,6 @@
   --link-hover-color: rgba(255, 255, 255, 0.2);
   --title-font-family: "Playfair Display", "serif";
   --body-font-family: "Poppins", "sans-serif";
-  --container-width: 96rem;
   --container-padding: 1.5rem;
   --section-vertical-spacing: 8rem;
 }
@@ -83,7 +82,7 @@ textarea {
 */
 /* !REUSABLE CLASSES */
 .container {
-  max-width: var(--container-width);
+  max-width: 54rem;
   margin: 0 auto;
   padding: 0 var(--container-padding);
 }
@@ -626,6 +625,10 @@ textarea {
 /* !MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 96rem;
+  }
+
   .inline-image {
     width: 15rem;
     height: 15rem;
